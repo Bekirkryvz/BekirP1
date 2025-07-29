@@ -66,10 +66,6 @@ fun MenuButton(
                 IconButton(
                     onClick = {
                         userViewModel.editMode = !userViewModel.editMode
-                        Log.d(
-                            context.toString(),
-                            "MenuButton clicked. New editMode: ${userViewModel.editMode}"
-                        )
                     }, modifier = Modifier.fillMaxSize()
                 ) {
                     Icon(imageVector = Icons.Filled.Menu, contentDescription = "Edit")
